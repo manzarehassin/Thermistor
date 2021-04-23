@@ -8,7 +8,9 @@ Thermistor (ntc) based temperature monitoring library for Arduino environment
 
 ## Initialize: 
 ### Thermistor obj (Input Pin);
+
 **obj:** object of Thermistor class.
+
 **Input Pin:** NTC connected analog pin. _you can use DEFAULT_INPUT as input pin, which represents A0_.
 
 **Returns** nothing.
@@ -16,14 +18,14 @@ Thermistor (ntc) based temperature monitoring library for Arduino environment
 
 # _Temperature Reading_
 
-### getC()
+### getC();
 
 **Description:** Reading temperature in Celsius.
 
 **Returns** 4 byte of float data.
 
 
-### getF()
+### getF();
 
 **Description:** Reading temperature in Fahrenheit.
 
