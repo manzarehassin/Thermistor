@@ -11,7 +11,7 @@ Thermistor (ntc) based temperature monitoring library for Arduino environment
 
 **obj:** object of Thermistor class.
 
-**Input Pin:** NTC connected analog pin. _you can use DEFAULT_INPUT as input pin, which represents A0_.
+**Input Pin:** NTC connected analog pin. _Use DEFAULT_INPUT as input pin, which represents A0_.
 
 **Returns** nothing.
 
