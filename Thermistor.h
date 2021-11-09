@@ -34,7 +34,7 @@ Thermistor library available at: https://github.com/kittyboy2005/Thermistor
 */
 
 
-#define NUMSAMPLES 2
+#define NUMSAMPLES 10
 #define DEFAULT_INPUT A0                // Default input pin set to A0 (Analog 0)
 
 #ifndef thermistor_h
@@ -58,10 +58,10 @@ class Thermistor
     
   private:
     byte _analogPin;
-    const PROGMEM unsigned long THERMISTORNOMINAL= 10*1000;    // resistance at 25 degrees C  
+    const PROGMEM unsigned long THERMISTORNOMINAL= 10000;    // resistance at 25 degrees C  
     const PROGMEM long BCOEFFICIENT =3950;                     // The beta coefficient of the thermistor (usually 3000-4000) 
-    const PROGMEM long SERIESRESISTOR =10*1000;                // the value of the 'other' resistor (10k)
-    const PROGMEM byte TEMPERATURENOMINAL =35;                 // temp. for nominal resistance (almost always 25 C)
+    const PROGMEM long SERIESRESISTOR =10000;                // the value of the 'other' resistor (10k)
+    const PROGMEM byte TEMPERATURENOMINAL =25;                 // temp. for nominal resistance (almost always 25 C)
     unsigned int samples[NUMSAMPLES];
     
     float getTemp();
